@@ -1,3 +1,12 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [CustomDocument.cs](./CS/CustomDocument/Custom DocumentManager/CustomDocument.cs) (VB: [CustomDocument.vb](./VB/CustomDocument/Custom DocumentManager/CustomDocument.vb))
+* [CustomDocumentManager.cs](./CS/CustomDocument/Custom DocumentManager/CustomDocumentManager.cs) (VB: [CustomDocumentManager.vb](./VB/CustomDocument/Custom DocumentManager/CustomDocumentManager.vb))
+* [CustomWidgetView.cs](./CS/CustomDocument/Custom DocumentManager/CustomWidgetView.cs) (VB: [CustomWidgetView.vb](./VB/CustomDocument/Custom DocumentManager/CustomWidgetView.vb))
+* [CustomWidgetViewRegistrator.cs](./CS/CustomDocument/Custom DocumentManager/CustomWidgetViewRegistrator.cs) (VB: [CustomWidgetViewRegistrator.vb](./VB/CustomDocument/Custom DocumentManager/CustomWidgetViewRegistrator.vb))
+* **[Main.cs](./CS/CustomDocument/Main.cs) (VB: [Main.vb](./VB/CustomDocument/Main.vb))**
+<!-- default file list end -->
 # How to create a custom DocumentManager with a custom View and a custom Document
 
 
