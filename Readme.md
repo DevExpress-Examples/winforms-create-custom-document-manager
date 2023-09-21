@@ -3,11 +3,12 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/T224767)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
+
 # How to create a custom DocumentManager with a custom View and a custom Document
 
 This example demonstrates how to create a custom [DocumentManager](https://docs.devexpress.com/WindowsForms/DevExpress.XtraBars.Docking2010.DocumentManager). Once you place this component onto a form, you can switch (convert) the current View to `WidgetView` using a smart tag menu. When you create new documents at design time or runtime, custom documents will be created. For demonstration purposes, the example adds a new custom property to the custom `Document` class. 
 
-![](https://raw.githubusercontent.com/DevExpress-Examples/how-to-create-a-custom-documentmanager-with-a-custom-view-and-a-custom-document-t224767/14.2.5%2B/media/winforms-document-manager.png)
+![Create a custom DocumentManager with a custom View and a custom Document](https://raw.githubusercontent.com/DevExpress-Examples/how-to-create-a-custom-documentmanager-with-a-custom-view-and-a-custom-document-t224767/14.2.5%2B/media/winforms-document-manager.png)
 
 ```csharp
 [ToolboxItem(true)]
