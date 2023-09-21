@@ -5,8 +5,32 @@
 <!-- default badges end -->
 # How to create a custom DocumentManager with a custom View and a custom Document
 
-This example illustrates how to create a custom <strong>DocumentManager</strong>. Once you place this component onto a form, it is possible to convert the current View to <strong>WidgetView</strong> by using this component's smart tag. In this case, a custom <strong>WidgetView</strong> will be created. When you create new documents at design time or runtime, custom documents will be created. For demonstration purposes, we added a new custom property to the custom Document class. 
+This example demonstrates how to create a custom [DocumentManager](https://docs.devexpress.com/WindowsForms/DevExpress.XtraBars.Docking2010.DocumentManager). Once you place this component onto a form, you can switch (convert) the current View to `WidgetView` using a smart tag menu. When you create new documents at design time or runtime, custom documents will be created. For demonstration purposes, the example adds a new custom property to the custom `Document` class. 
 
-<br/>
+![](https://raw.githubusercontent.com/DevExpress-Examples/how-to-create-a-custom-documentmanager-with-a-custom-view-and-a-custom-document-t224767/14.2.5%2B/media/winforms-document-manager.png)
+
+```csharp
+[ToolboxItem(true)]
+public class CustomDocumentManager : DocumentManager {
+    public CustomDocumentManager() { }
+    public CustomDocumentManager(IContainer container)
+        : base(container) {
+
+    }
+    protected override void RegisterViews() {
+        base.RegisterViews();
+        RegisterView<CustomWidgetViewRegistrator>(ViewType.Widget);
+    }
+    public override BaseView CreateView(ViewType type) {
+        if (type == ViewType.Widget) return new CustomWidgetView(Container);
+        return base.CreateView(type);
+    }
+}
+```
 
 
+## Documentation
+
+* [Application UI Manager](https://docs.devexpress.com/WindowsForms/11359/controls-and-libraries/application-ui-manager)
+* [Getting Started](https://docs.devexpress.com/WindowsForms/402857/controls-and-libraries/application-ui-manager/get-started)
+* [Create Custom Document Actions](https://docs.devexpress.com/WindowsForms/15686/controls-and-libraries/application-ui-manager/examples/how-to-create-custom-document-actions)
